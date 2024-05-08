@@ -13,8 +13,12 @@ class Arquero extends Jugador{
     }
 
     public function dispararFlecha(){
-        $flechasRestantes = $this->numeroFlechas - 1;
+        if($this->numeroFlechas > 0){
+        $flechasRestantes = $this->numeroFlechas -= 1;
         echo "Has disparado una flecha, te quedan " . $flechasRestantes . PHP_EOL;
+    } else {
+        echo "Ups. No quedan flechas, a correr!!";
+    }
     }
 }
 ?>
