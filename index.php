@@ -18,10 +18,11 @@ $arquero->moverIzquierda();
 $guerrero = new Guerrero("Dart","Matagragones");
 
 $guerrero->moverArriba();
+$guerrero->correrArriba();
 
 $mago = new Mago("Magordito");
 $mago->anadirHechizo("Tormenta de legumbres");
-$mago->moverAbajo();
 $mago->moverDerecha();
+$mago->moverAbajo();
 $mago->lanzarHechizo("Tormenta de legumbres");
 ?>
